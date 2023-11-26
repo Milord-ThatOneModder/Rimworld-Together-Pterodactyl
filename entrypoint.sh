@@ -32,6 +32,7 @@ if [ -z ${AUTO_UPDATE} ] || [ "${AUTO_UPDATE}" == "1" ]; then
     # Update Source Server
     wget -N https://github.com/Nova-Atomic/Rimworld-Together/releases/download/1.1.1/Linux-x64.zip -O RimworldTogether.zip
     unzip -qo RimworldTogether.zip
+    chmod +x GameServer
 else
     echo -e "Not updating game server as auto update was set to 0. Starting Server"
 fi
