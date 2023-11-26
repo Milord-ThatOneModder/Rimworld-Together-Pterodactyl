@@ -25,7 +25,7 @@ RUN export DEBIAN_FRONTEND=noninteractive \
     # Install .NET
     && apt-get update \
     && apt-get install -y --no-install-recommends \
-        dotnet-runtime-8.0 \
+        dotnet-runtime-7.0 \
     \
     # Cleanup
     && rm -rf /var/lib/apt/lists/*
